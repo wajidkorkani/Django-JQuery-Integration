@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
-
 {% block head %}
-    <title>Home</title>
+<title>Home</title>
 {% endblock %}
 
 {% block body %}
-    <h1>{{ Text }}</h1>
+<h1>{{ Text }}</h1>
+<p>Default text!</p>
+<script>
+$(document).ready(function() {
+    $('p').text('Hello JQuery!');
+});
+</script>
 {% endblock %}
